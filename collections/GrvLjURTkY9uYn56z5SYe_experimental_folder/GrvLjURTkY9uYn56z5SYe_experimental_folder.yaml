@@ -1,0 +1,18 @@
+authority_level: null
+description: null
+archived: false
+slug: experimental_folder
+archive_operation_id: null
+name: experimental folder
+personal_owner_id: null
+type: remote-synced
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: GrvLjURTkY9uYn56z5SYe
+  label: experimental_folder
+archived_directly: null
+entity_id: GrvLjURTkY9uYn56z5SYe
+namespace: null
+created_at: '2025-09-30T23:38:57.897692Z'

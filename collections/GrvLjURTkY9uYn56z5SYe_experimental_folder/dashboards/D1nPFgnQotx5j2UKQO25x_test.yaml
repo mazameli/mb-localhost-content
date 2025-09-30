@@ -1,0 +1,27 @@
+description: null
+archived: false
+collection_position: null
+dashcards: []
+initially_published_at: null
+tabs: []
+enable_embedding: false
+collection_id: GrvLjURTkY9uYn56z5SYe
+show_in_getting_started: false
+name: test
+width: fixed
+caveats: null
+creator_id: maz@metabase.com
+made_public_by_id: null
+embedding_params: null
+serdes/meta:
+- model: Dashboard
+  id: D1nPFgnQotx5j2UKQO25x
+  label: test
+position: null
+archived_directly: false
+entity_id: D1nPFgnQotx5j2UKQO25x
+parameters: []
+auto_apply_filters: true
+created_at: '2025-09-30T23:44:43.529861Z'
+public_uuid: null
+points_of_interest: null

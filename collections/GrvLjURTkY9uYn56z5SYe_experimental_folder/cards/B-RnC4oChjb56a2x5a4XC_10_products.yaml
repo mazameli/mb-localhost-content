@@ -1,0 +1,153 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id: null
+result_metadata:
+- database_type: BIGINT
+  semantic_type: type/PK
+  lib/deduplicated-name: ID
+  lib/original-name: ID
+  name: ID
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - ID
+  - base-type: type/BigInteger
+  effective_type: type/BigInteger
+  display_name: ID
+  base_type: type/BigInteger
+- database_type: CHARACTER
+  semantic_type: null
+  lib/deduplicated-name: EAN
+  lib/original-name: EAN
+  name: EAN
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - EAN
+  - base-type: type/Text
+  effective_type: type/Text
+  display_name: EAN
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Title
+  lib/deduplicated-name: TITLE
+  lib/original-name: TITLE
+  name: TITLE
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - TITLE
+  - base-type: type/Text
+  effective_type: type/Text
+  display_name: TITLE
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: null
+  lib/deduplicated-name: CATEGORY
+  lib/original-name: CATEGORY
+  name: CATEGORY
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - CATEGORY
+  - base-type: type/Text
+  effective_type: type/Text
+  display_name: CATEGORY
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Company
+  lib/deduplicated-name: VENDOR
+  lib/original-name: VENDOR
+  name: VENDOR
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - VENDOR
+  - base-type: type/Text
+  effective_type: type/Text
+  display_name: VENDOR
+  base_type: type/Text
+- database_type: DOUBLE PRECISION
+  semantic_type: null
+  lib/deduplicated-name: PRICE
+  lib/original-name: PRICE
+  name: PRICE
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - PRICE
+  - base-type: type/Float
+  effective_type: type/Float
+  display_name: PRICE
+  base_type: type/Float
+- database_type: DOUBLE PRECISION
+  semantic_type: type/Score
+  lib/deduplicated-name: RATING
+  lib/original-name: RATING
+  name: RATING
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - RATING
+  - base-type: type/Float
+  effective_type: type/Float
+  display_name: RATING
+  base_type: type/Float
+- database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  name: CREATED_AT
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - CREATED_AT
+  - base-type: type/DateTime
+  effective_type: type/DateTime
+  display_name: CREATED_AT
+  base_type: type/DateTime
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: GrvLjURTkY9uYn56z5SYe
+query_type: native
+name: 10 products
+document_id: null
+type: question
+creator_id: maz@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: native
+  native:
+    template-tags: {}
+    query: select * from products limit 10
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: B-RnC4oChjb56a2x5a4XC
+  label: 10_products
+display: table
+archived_directly: false
+entity_id: B-RnC4oChjb56a2x5a4XC
+collection_preview: true
+visualization_settings:
+  table.pivot_column: CATEGORY
+  table.cell_column: PRICE
+  column_settings: null
+metabase_version: v0.45.1-SNAPSHOT (f694966)
+parameters: []
+dashboard_id: null
+created_at: '2025-09-30T23:40:22.260707Z'
+public_uuid: null

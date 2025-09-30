@@ -1,0 +1,162 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The date and time an order was submitted.
+  database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  lib/breakout?: true
+  unit: month
+  name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  source: breakout
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - temporal-unit: month
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  metabase.lib.field/temporal-unit: month
+  position: 7
+  visibility_type: normal
+  inherited_temporal_unit: month
+  display_name: 'Created At: Month'
+  base_type: type/DateTime
+- description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  database_type: CHARACTER VARYING
+  semantic_type: type/Category
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  lib/deduplicated-name: CATEGORY
+  lib/original-name: CATEGORY
+  lib/breakout?: true
+  name: CATEGORY
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: CATEGORY
+  lib/original-display-name: Category
+  source: breakout
+  fk_field_id: 14
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__CATEGORY
+  position: 3
+  visibility_type: normal
+  display_name: Product → Category
+  base_type: type/Text
+- database_type: BIGINT
+  semantic_type: type/Quantity
+  lib/deduplicated-name: count
+  lib/original-name: count
+  name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+  source: aggregation
+  field_ref:
+  - aggregation
+  - 0
+  effective_type: type/BigInteger
+  lib/desired-column-alias: count
+  display_name: Count
+  base_type: type/BigInteger
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: KKznhuT1pLRZ0ycy4AbMT
+query_type: query
+name: Orders by products
+document_id: null
+type: question
+creator_id: maz@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: query
+  query:
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: X7sUtqfs_b3g2sa5FVJ0O
+  label: orders_by_products
+display: line
+archived_directly: false
+entity_id: X7sUtqfs_b3g2sa5FVJ0O
+collection_preview: true
+visualization_settings:
+  graph.x_axis.scale: timeseries
+  graph.dimensions:
+  - CREATED_AT
+  - CATEGORY
+  graph.metrics:
+  - count
+  column_settings: null
+metabase_version: v0.45.1-SNAPSHOT (f694966)
+parameters: []
+dashboard_id: wRwz-Mmy3_sc7KmDoejFG
+created_at: '2025-09-30T23:26:31.881667Z'
+public_uuid: null

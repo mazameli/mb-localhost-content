@@ -1,0 +1,46 @@
+description: null
+archived: false
+collection_position: 1
+dashcards:
+- size_x: 24
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: wRwz-Mmy3_sc7KmDoejFG
+  - model: DashboardCard
+    id: dHcQzjbOHIghGMYKDpgUv
+  card_id: X7sUtqfs_b3g2sa5FVJ0O
+  entity_id: dHcQzjbOHIghGMYKDpgUv
+  visualization_settings:
+    column_settings: null
+  size_y: 11
+  created_at: '2025-09-30T23:26:31.900105Z'
+  row: 0
+initially_published_at: null
+tabs: []
+enable_embedding: false
+collection_id: KKznhuT1pLRZ0ycy4AbMT
+show_in_getting_started: false
+name: Dev dashboard
+width: fixed
+caveats: null
+creator_id: maz@metabase.com
+made_public_by_id: null
+embedding_params: null
+serdes/meta:
+- model: Dashboard
+  id: wRwz-Mmy3_sc7KmDoejFG
+  label: dev_dashboard
+position: null
+archived_directly: false
+entity_id: wRwz-Mmy3_sc7KmDoejFG
+parameters: []
+auto_apply_filters: true
+created_at: '2025-09-30T22:31:53.223398Z'
+public_uuid: null
+points_of_interest: null

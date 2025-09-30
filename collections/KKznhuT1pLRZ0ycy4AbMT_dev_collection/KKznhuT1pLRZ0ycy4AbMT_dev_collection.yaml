@@ -1,0 +1,18 @@
+authority_level: null
+description: null
+archived: false
+slug: dev_collection
+archive_operation_id: null
+name: dev collection
+personal_owner_id: null
+type: remote-synced
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: KKznhuT1pLRZ0ycy4AbMT
+  label: dev_collection
+archived_directly: null
+entity_id: KKznhuT1pLRZ0ycy4AbMT
+namespace: null
+created_at: '2025-09-30T22:12:01.329874Z'

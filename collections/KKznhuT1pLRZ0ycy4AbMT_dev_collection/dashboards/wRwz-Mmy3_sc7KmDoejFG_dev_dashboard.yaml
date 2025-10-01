@@ -21,6 +21,25 @@ dashcards:
   size_y: 11
   created_at: '2025-09-30T23:26:31.900105Z'
   row: 0
+- size_x: 12
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: wRwz-Mmy3_sc7KmDoejFG
+  - model: DashboardCard
+    id: WjpAnHQaC7zvXFMOCRckH
+  card_id: gJvXwhicxHaGLqY34x0qh
+  entity_id: WjpAnHQaC7zvXFMOCRckH
+  visualization_settings:
+    column_settings: null
+  size_y: 9
+  created_at: '2025-10-01T15:46:15.811176Z'
+  row: 11
 initially_published_at: null
 tabs: []
 enable_embedding: false
